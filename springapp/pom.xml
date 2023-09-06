@@ -36,8 +36,12 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
-<dependency>
-</dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13</version>
+        <scope>test</scope>
+    </dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
