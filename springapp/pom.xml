@@ -36,6 +36,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
+<dependency>
+</dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
@@ -45,47 +47,24 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache
         <groupId>org.junit.vintage</groupId>
         <artifactId>junit-vintage-engine</artifactId>
         <scope>test</scope>
-<exclusions>
-    <exclusion>
-
-<groupId>org.hamcrest</groupId>
-
-<artifactId>hamcrest-core</artifactId>
-
-</exclusion>
-
-</exclusions>
-
-</dependency>
-
-
--<dependency>
-
-<groupId>org.mockito</groupId>
-
-<artifactId>mockito-core</artifactId>
-
-</dependency>
-
+        <exclusions>
+            <exclusion>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+    </dependency>
 </dependencies>
-
-
--<build>
-
-
--<plugins>
-
-
--<plugin>
-
-<groupId>org.springframework.boot</groupId>
-
-<artifactId>spring-boot-maven-plugin</artifactId>
-
-</plugin>
-
-</plugins>
-
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
 </build>
-
 </project>
